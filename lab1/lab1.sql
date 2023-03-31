@@ -67,7 +67,7 @@ CREATE TABLE Vaccine_trial(
     time DATE NOT NULL,
     farm_id INTEGER NOT NULL REFERENCES Farm(farm_id) ON DELETE CASCADE,
     government_notification BOOLEAN NOT NULL,
-    farm_workers_notification BOOLEAN NOT NULL
+    farm_workers_notification BOOLEAN NOT NULL,
     UNIQUE(corporation_id,time)
 );
 
